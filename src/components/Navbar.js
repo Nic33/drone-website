@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import {Link} from 'react-router-dom';
 import './Navbar.css';
-import logo from "./logo.png";
+import logo from "../images/logo.png";
 import { Button } from './Button';
 
 function Navbar() {
@@ -19,6 +19,10 @@ function Navbar() {
             setButton(true);
         }
     };
+    
+    useEffect(() => {
+        showButton();
+    }, []);
 
     window.addEventListener('resize', showButton);
  */
