@@ -69,6 +69,7 @@ img {
         left: -100%;
         opacity: 1;
         transition: all 0.5s ease;
+        padding: 20px;
     }
 
     .nav-menu.active {
@@ -91,7 +92,7 @@ img {
         position: absolute;
         top: 0;
         right: 0;
-        transform: translate(-100%, 60%);
+        transform: translate(-80%, 120%);
         cursor: pointer;
     }
 
