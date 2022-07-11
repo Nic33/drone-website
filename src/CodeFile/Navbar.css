@@ -1,0 +1,99 @@
+.navbar {
+    background: black;
+    height: 100px;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+    position: relative;
+
+}
+/* obligé de d'ajouter un display flex juste pour le logo et le titre*/
+.navbar-logo {
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+    color: rgb(0, 251, 255);
+    text-decoration: none;
+    font-size: 1.8rem;
+    
+    margin-left: 50px ;
+}
+  
+img {
+    width: 50px;
+    height: 50px;
+    margin-left:10px;
+}
+
+.menu-bar {
+    display: none;
+}
+
+.material-symbols-outlined {
+    color: rgb(255, 255, 255);
+    font-size:40px;
+}
+
+.nav-menu {
+    position: absolute;
+    display: inline;
+    right: 50px;
+}
+
+.nav-link{
+    color:white;
+    text-decoration: none;
+    padding: 1rem;
+
+}
+
+.nav-link:hover{
+    color: rgb(0, 251, 255);
+
+
+}
+
+@media screen and (max-width: 960px) {
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 100px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        padding: 40px;
+    }
+
+    .nav-menu.active {
+        background: #242222;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+
+    .nav-links {
+        text-align: left;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    .menu-bar {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-80%, 70%);
+        cursor: pointer;
+    }
+
+}
